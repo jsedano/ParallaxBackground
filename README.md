@@ -2,19 +2,19 @@ ParallaxBackground
 ==================
 
 ParallaxBackground allows you to integrate a parallax scrolling effect in your SpriteKit games.
-
+PBParallaxScrolling
 ![Parallax Scrolling](http://digitalleaves.com/blog/wp-content/uploads/2014/04/newVersionOfPB.jpg)
 
 Usage
 =====
 
-It is really easy to integrate the parallax background into your project. You just need to copy the files PBParallaxBackground.m and PBParallaxBackground.h in your Xcode project.
+It is really easy to integrate the parallax background into your project. You just need to copy the files PBParallaxScrolling.m and PBParallaxScrolling.h in your Xcode project.
 
-You should initialize and insert the PBParallaxBackground in the scene initialization:
+You should initialize and insert the PBParallaxScrolling in the scene initialization:
 
 ```
 NSArray * imageNames = @[@"pForeground", @"pMiddle", @"pBackground"];
-PBParallaxBackground * parallax = [[PBParallaxBackground alloc] initWithBackgrounds:imageNames size:size direction:kPBParallaxBackgroundDirectionLeft fastestSpeed:kPBParallaxBackgroundDefaultSpeed andSpeedDecrease:kPBParallaxBackgroundDefaultSpeedDifferential];
+PBParallaxScrolling * parallax = [[PBParallaxScrolling alloc] initWithBackgrounds:imageNames size:size direction:kPBParallaxBackgroundDirectionLeft fastestSpeed:kPBParallaxBackgroundDefaultSpeed andSpeedDecrease:kPBParallaxBackgroundDefaultSpeedDifferential];
 self.parallaxBackground = parallax;
 [self addChild:parallax];
 ```     
